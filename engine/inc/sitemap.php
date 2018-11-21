@@ -2,22 +2,22 @@
 
 /*
 =============================================================================
- Файл: sitemap.php (backend) версия 2.2
+ Р¤Р°Р№Р»: sitemap.php (backend) РІРµСЂСЃРёСЏ 2.2
 -----------------------------------------------------------------------------
- Автор: Фомин Александр Алексеевич, mail@mithrandir.ru
+ РђРІС‚РѕСЂ: Р¤РѕРјРёРЅ РђР»РµРєСЃР°РЅРґСЂ РђР»РµРєСЃРµРµРІРёС‡, mail@mithrandir.ru
 -----------------------------------------------------------------------------
- Сайт поддержки: http://alaev.info/blog/post/1974
+ РЎР°Р№С‚ РїРѕРґРґРµСЂР¶РєРё: http://alaev.info/blog/post/1974
 -----------------------------------------------------------------------------
- Назначение: генератор кода для вставки модуля в шаблон main.tpl
+ РќР°Р·РЅР°С‡РµРЅРёРµ: РіРµРЅРµСЂР°С‚РѕСЂ РєРѕРґР° РґР»СЏ РІСЃС‚Р°РІРєРё РјРѕРґСѓР»СЏ РІ С€Р°Р±Р»РѕРЅ main.tpl
 =============================================================================
 */
 
-    // Антихакер
+    // РђРЅС‚РёС…Р°РєРµСЂ
     if( !defined( 'DATALIFEENGINE' ) OR !defined( 'LOGGED_IN' ) ) {
             die( "Hacking attempt!" );
     }
 
-    echoheader('sitemap', 'Генератор кода для вставки модуля в шаблон');
+    echoheader('sitemap', 'Р“РµРЅРµСЂР°С‚РѕСЂ РєРѕРґР° РґР»СЏ РІСЃС‚Р°РІРєРё РјРѕРґСѓР»СЏ РІ С€Р°Р±Р»РѕРЅ');
         echo '
 
 '.($config['version_id'] >= 10.2 ? '<style>.uniform, div.selector {min-width: 250px;}</style>' : '<style>
@@ -38,7 +38,7 @@ font-size: 12px;
 -o-border-radius: 0;
 border-radius: 0;
 background: whitesmoke;
-background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…pZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiвЂ¦pZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
 background-size: 100%;
 background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f5f5f5));
 background-image: -webkit-linear-gradient(top, #ffffff, #f5f5f5);
@@ -59,10 +59,10 @@ color: #666;
 <div class="box">
 
 	<div class="box-header">
-		<div class="title">Генератор кода для вставки модуля</div>
+		<div class="title">Р“РµРЅРµСЂР°С‚РѕСЂ РєРѕРґР° РґР»СЏ РІСЃС‚Р°РІРєРё РјРѕРґСѓР»СЏ</div>
 		<ul class="box-toolbar">
 			<li class="toolbar-link">
-			<a target="_blank" href="http://alaev.info/blog/post/1974?from=SiteMapAdmin">SiteMap v.2.2 © 2014 Блог АлаичЪ\'а - разработка и поддержка модуля</a>
+			<a target="_blank" href="http://alaev.info/blog/post/1974?from=SiteMapAdmin">SiteMap v.2.2 В© 2014 Р‘Р»РѕРі РђР»Р°РёС‡РЄ\'Р° - СЂР°Р·СЂР°Р±РѕС‚РєР° Рё РїРѕРґРґРµСЂР¶РєР° РјРѕРґСѓР»СЏ</a>
 			</li>
 		</ul>
 	</div>
@@ -71,108 +71,108 @@ color: #666;
 	<table class="table table-normal">
 	<tbody>
 		<tr>
-		<td class="col-xs-6"><h5>Включаемые категории:</h5><span class="note large">Cписок id категорий через запятую для вывода в карте.</span></td>
+		<td class="col-xs-6"><h5>Р’РєР»СЋС‡Р°РµРјС‹Рµ РєР°С‚РµРіРѕСЂРёРё:</h5><span class="note large">CРїРёСЃРѕРє id РєР°С‚РµРіРѕСЂРёР№ С‡РµСЂРµР· Р·Р°РїСЏС‚СѓСЋ РґР»СЏ РІС‹РІРѕРґР° РІ РєР°СЂС‚Рµ.</span></td>
 		<td class="col-xs-6 settingstd"><input class="uniform" type="text" name="sitemap_need_cats" id="sitemap_need_cats" value="" /></td>
 		</tr><tr>
-		<td class="col-xs-6"><h5>Исключаемые категории:</h5><span class="note large">Список id категорий через запятую, исключаемых из карты.</span></td>
+		<td class="col-xs-6"><h5>РСЃРєР»СЋС‡Р°РµРјС‹Рµ РєР°С‚РµРіРѕСЂРёРё:</h5><span class="note large">РЎРїРёСЃРѕРє id РєР°С‚РµРіРѕСЂРёР№ С‡РµСЂРµР· Р·Р°РїСЏС‚СѓСЋ, РёСЃРєР»СЋС‡Р°РµРјС‹С… РёР· РєР°СЂС‚С‹.</span></td>
 		<td class="col-xs-6 settingstd"><input class="uniform" type="text" name="sitemap_exc_cats" id="sitemap_exc_cats" value="" /></td>
 		</tr><tr>
-		<td class="col-xs-6"><h5>Включаемые статьи:</h5><span class="note large">Cписок id статей через запятую для вывода в карте.</span></td>
+		<td class="col-xs-6"><h5>Р’РєР»СЋС‡Р°РµРјС‹Рµ СЃС‚Р°С‚СЊРё:</h5><span class="note large">CРїРёСЃРѕРє id СЃС‚Р°С‚РµР№ С‡РµСЂРµР· Р·Р°РїСЏС‚СѓСЋ РґР»СЏ РІС‹РІРѕРґР° РІ РєР°СЂС‚Рµ.</span></td>
 		<td class="col-xs-6 settingstd"><input class="uniform" type="text" name="sitemap_need_news" id="sitemap_need_news" value="" /></td>
 		</tr><tr>
-		<td class="col-xs-6"><h5>Исключаемые статьи:</h5><span class="note large">Список id статей через запятую, исключаемых из карты.</span></td>
+		<td class="col-xs-6"><h5>РСЃРєР»СЋС‡Р°РµРјС‹Рµ СЃС‚Р°С‚СЊРё:</h5><span class="note large">РЎРїРёСЃРѕРє id СЃС‚Р°С‚РµР№ С‡РµСЂРµР· Р·Р°РїСЏС‚СѓСЋ, РёСЃРєР»СЋС‡Р°РµРјС‹С… РёР· РєР°СЂС‚С‹.</span></td>
 		<td class="col-xs-6 settingstd"><input class="uniform" type="text" name="sitemap_exc_news" id="sitemap_exc_news" value="" /></td>
 		</tr><tr>
-		<td class="col-xs-6"><h5>Включаемые статические страницы:</h5><span class="note large">Cписок id статических страниц через запятую для вывода в карте.</span></td>
+		<td class="col-xs-6"><h5>Р’РєР»СЋС‡Р°РµРјС‹Рµ СЃС‚Р°С‚РёС‡РµСЃРєРёРµ СЃС‚СЂР°РЅРёС†С‹:</h5><span class="note large">CРїРёСЃРѕРє id СЃС‚Р°С‚РёС‡РµСЃРєРёС… СЃС‚СЂР°РЅРёС† С‡РµСЂРµР· Р·Р°РїСЏС‚СѓСЋ РґР»СЏ РІС‹РІРѕРґР° РІ РєР°СЂС‚Рµ.</span></td>
 		<td class="col-xs-6 settingstd"><input class="uniform" type="text" name="sitemap_need_static" id="sitemap_need_static" value="" /></td>
 		</tr><tr>
-		<td class="col-xs-6"><h5>Исключаемые статические страницы:</h5><span class="note large">Список id статических страниц через запятую, исключаемых из карты.</span></td>
+		<td class="col-xs-6"><h5>РСЃРєР»СЋС‡Р°РµРјС‹Рµ СЃС‚Р°С‚РёС‡РµСЃРєРёРµ СЃС‚СЂР°РЅРёС†С‹:</h5><span class="note large">РЎРїРёСЃРѕРє id СЃС‚Р°С‚РёС‡РµСЃРєРёС… СЃС‚СЂР°РЅРёС† С‡РµСЂРµР· Р·Р°РїСЏС‚СѓСЋ, РёСЃРєР»СЋС‡Р°РµРјС‹С… РёР· РєР°СЂС‚С‹.</span></td>
 		<td class="col-xs-6 settingstd"><input class="uniform" type="text" name="sitemap_exc_static" id="sitemap_exc_static" value="" /></td>
 		</tr><tr>
-		<td class="col-xs-6"><h5>Названия категорий как ссылки:</h5><span class="note large">Отображать названия категорий в карте сайта ссылками иа их просмотр.</span></td>
+		<td class="col-xs-6"><h5>РќР°Р·РІР°РЅРёСЏ РєР°С‚РµРіРѕСЂРёР№ РєР°Рє СЃСЃС‹Р»РєРё:</h5><span class="note large">РћС‚РѕР±СЂР°Р¶Р°С‚СЊ РЅР°Р·РІР°РЅРёСЏ РєР°С‚РµРіРѕСЂРёР№ РІ РєР°СЂС‚Рµ СЃР°Р№С‚Р° СЃСЃС‹Р»РєР°РјРё РёР° РёС… РїСЂРѕСЃРјРѕС‚СЂ.</span></td>
 		<td class="col-xs-6 settingstd">
 			<select class="uniform" name="cats_as_links" id="sitemap_cats_as_links">
 			<option value=""></option>
-			<option value="1">да</option>
-			<option value="0">нет</option>
+			<option value="1">РґР°</option>
+			<option value="0">РЅРµС‚</option>
 			</select>
 		</td>
 		</tr><tr>
-		<td class="col-xs-6"><h5>Отображать в карте статические страницы:</h5><span class="note large">Отображать статические страницы в дереве карты сайта.</span></td>
+		<td class="col-xs-6"><h5>РћС‚РѕР±СЂР°Р¶Р°С‚СЊ РІ РєР°СЂС‚Рµ СЃС‚Р°С‚РёС‡РµСЃРєРёРµ СЃС‚СЂР°РЅРёС†С‹:</h5><span class="note large">РћС‚РѕР±СЂР°Р¶Р°С‚СЊ СЃС‚Р°С‚РёС‡РµСЃРєРёРµ СЃС‚СЂР°РЅРёС†С‹ РІ РґРµСЂРµРІРµ РєР°СЂС‚С‹ СЃР°Р№С‚Р°.</span></td>
 		<td class="col-xs-6 settingstd">
 			<select class="uniform" name="show_static" id="sitemap_show_static">
 			<option value=""></option>
-			<option value="1">да</option>
-			<option value="0">нет</option>
+			<option value="1">РґР°</option>
+			<option value="0">РЅРµС‚</option>
 			</select>
 		</td>
 		</tr><tr>
-		<td class="col-xs-6"><h5>Сортировка списка категорий:</h5><span class="note large">Поле, по значению которого должны быть отсортированы категории при выводе карты.</span></td>
+		<td class="col-xs-6"><h5>РЎРѕСЂС‚РёСЂРѕРІРєР° СЃРїРёСЃРєР° РєР°С‚РµРіРѕСЂРёР№:</h5><span class="note large">РџРѕР»Рµ, РїРѕ Р·РЅР°С‡РµРЅРёСЋ РєРѕС‚РѕСЂРѕРіРѕ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅС‹ РєР°С‚РµРіРѕСЂРёРё РїСЂРё РІС‹РІРѕРґРµ РєР°СЂС‚С‹.</span></td>
 		<td class="col-xs-6 settingstd">
 			<select class="uniform" name="cats_sort" id="sitemap_cats_sort">
 			<option value=""></option>
-			<option value="posi">по установленному порядку</option>
-			<option value="id">по дате добавления</option>
-			<option value="name">по алфавиту</option>
+			<option value="posi">РїРѕ СѓСЃС‚Р°РЅРѕРІР»РµРЅРЅРѕРјСѓ РїРѕСЂСЏРґРєСѓ</option>
+			<option value="id">РїРѕ РґР°С‚Рµ РґРѕР±Р°РІР»РµРЅРёСЏ</option>
+			<option value="name">РїРѕ Р°Р»С„Р°РІРёС‚Сѓ</option>
 			</select>
 		</td>
 		</tr><tr>
-		<td class="col-xs-6"><h5>Направление сортировки:</h5><span class="note large">Направление сортировки списка категорий.</span></td>
+		<td class="col-xs-6"><h5>РќР°РїСЂР°РІР»РµРЅРёРµ СЃРѕСЂС‚РёСЂРѕРІРєРё:</h5><span class="note large">РќР°РїСЂР°РІР»РµРЅРёРµ СЃРѕСЂС‚РёСЂРѕРІРєРё СЃРїРёСЃРєР° РєР°С‚РµРіРѕСЂРёР№.</span></td>
 		<td class="col-xs-6 settingstd">
 			<select class="uniform" name="cats_msort" id="sitemap_cats_msort">
 			<option value=""></option>
-			<option value="ASC">по возрастанию</option>
-			<option value="DESC">по убыванию</option>
+			<option value="ASC">РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ</option>
+			<option value="DESC">РїРѕ СѓР±С‹РІР°РЅРёСЋ</option>
 			</select>
 		</td>
 		</tr><tr>
-		<td class="col-xs-6"><h5>Сортировка списка статей:</h5><span class="note large">Поле, по значению которого должны быть отсортированы статьи при выводе карты.</span></td>
+		<td class="col-xs-6"><h5>РЎРѕСЂС‚РёСЂРѕРІРєР° СЃРїРёСЃРєР° СЃС‚Р°С‚РµР№:</h5><span class="note large">РџРѕР»Рµ, РїРѕ Р·РЅР°С‡РµРЅРёСЋ РєРѕС‚РѕСЂРѕРіРѕ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅС‹ СЃС‚Р°С‚СЊРё РїСЂРё РІС‹РІРѕРґРµ РєР°СЂС‚С‹.</span></td>
 		<td class="col-xs-6 settingstd">
 			<select class="uniform" name="news_sort" id="sitemap_news_sort">
 			<option value=""></option>
-			<option value="id">по дате добавления</option>
-			<option value="date">по дате публикации</option>
-			<option value="title">по алфавиту</option>
+			<option value="id">РїРѕ РґР°С‚Рµ РґРѕР±Р°РІР»РµРЅРёСЏ</option>
+			<option value="date">РїРѕ РґР°С‚Рµ РїСѓР±Р»РёРєР°С†РёРё</option>
+			<option value="title">РїРѕ Р°Р»С„Р°РІРёС‚Сѓ</option>
 			</select>
 		</td>
 		</tr><tr>
-		<td class="col-xs-6"><h5>Направление сортировки:</h5><span class="note large">Направление сортировки списка статей.</span></td>
+		<td class="col-xs-6"><h5>РќР°РїСЂР°РІР»РµРЅРёРµ СЃРѕСЂС‚РёСЂРѕРІРєРё:</h5><span class="note large">РќР°РїСЂР°РІР»РµРЅРёРµ СЃРѕСЂС‚РёСЂРѕРІРєРё СЃРїРёСЃРєР° СЃС‚Р°С‚РµР№.</span></td>
 		<td class="col-xs-6 settingstd">
 			<select class="uniform" name="news_msort" id="sitemap_news_msort">
 			<option value=""></option>
-			<option value="ASC">по возрастанию</option>
-			<option value="DESC">по убыванию</option>
+			<option value="ASC">РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ</option>
+			<option value="DESC">РїРѕ СѓР±С‹РІР°РЅРёСЋ</option>
 			</select>
 		</td>
 		</tr><tr>
-		<td class="col-xs-6"><h5>Сортировка статических страниц:</h5><span class="note large">Поле, по значению которого должны быть отсортированы статические страницы при выводе карты.</span></td>
+		<td class="col-xs-6"><h5>РЎРѕСЂС‚РёСЂРѕРІРєР° СЃС‚Р°С‚РёС‡РµСЃРєРёС… СЃС‚СЂР°РЅРёС†:</h5><span class="note large">РџРѕР»Рµ, РїРѕ Р·РЅР°С‡РµРЅРёСЋ РєРѕС‚РѕСЂРѕРіРѕ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅС‹ СЃС‚Р°С‚РёС‡РµСЃРєРёРµ СЃС‚СЂР°РЅРёС†С‹ РїСЂРё РІС‹РІРѕРґРµ РєР°СЂС‚С‹.</span></td>
 		<td class="col-xs-6 settingstd">
 			<select class="uniform" name="cats_sort" id="sitemap_static_sort">
 			<option value=""></option>
-			<option value="id">по дате добавления</option>
-			<option value="name">по алфавиту</option>
+			<option value="id">РїРѕ РґР°С‚Рµ РґРѕР±Р°РІР»РµРЅРёСЏ</option>
+			<option value="name">РїРѕ Р°Р»С„Р°РІРёС‚Сѓ</option>
 			</select>
 		</td>
 		</tr><tr>
-		<td class="col-xs-6"><h5>Направление сортировки:</h5><span class="note large">Направление сортировки списка статических статей.</span></td>
+		<td class="col-xs-6"><h5>РќР°РїСЂР°РІР»РµРЅРёРµ СЃРѕСЂС‚РёСЂРѕРІРєРё:</h5><span class="note large">РќР°РїСЂР°РІР»РµРЅРёРµ СЃРѕСЂС‚РёСЂРѕРІРєРё СЃРїРёСЃРєР° СЃС‚Р°С‚РёС‡РµСЃРєРёС… СЃС‚Р°С‚РµР№.</span></td>
 		<td class="col-xs-6 settingstd">
 			<select class="uniform" name="cats_msort" id="sitemap_static_msort">
 			<option value=""></option>
-			<option value="ASC">по возрастанию</option>
-			<option value="DESC">по убыванию</option>
+			<option value="ASC">РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ</option>
+			<option value="DESC">РїРѕ СѓР±С‹РІР°РЅРёСЋ</option>
 			</select>
 		</td>
 		</tr><tr>
-		<td class="col-xs-6"><h5>Количество подкатегорий:</h5><span class="note large">Максимальное количество выводимых подкатегорий.</span></td>
+		<td class="col-xs-6"><h5>РљРѕР»РёС‡РµСЃС‚РІРѕ РїРѕРґРєР°С‚РµРіРѕСЂРёР№:</h5><span class="note large">РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РІС‹РІРѕРґРёРјС‹С… РїРѕРґРєР°С‚РµРіРѕСЂРёР№.</span></td>
 		<td class="col-xs-6 settingstd"><input class="uniform" type="text" name="sitemap_cats_limit" id="sitemap_cats_limit" value="" /></td>
 		</tr><tr>
-		<td class="col-xs-6"><h5>Количество статей:</h5><span class="note large">Максимальное количество выводимых статей.</span></td>
+		<td class="col-xs-6"><h5>РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚Р°С‚РµР№:</h5><span class="note large">РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РІС‹РІРѕРґРёРјС‹С… СЃС‚Р°С‚РµР№.</span></td>
 		<td class="col-xs-6 settingstd"><input class="uniform" type="text" name="sitemap_news_limit" id="sitemap_news_limit" value="" /></td>
 		</tr><tr>
-		<td class="col-xs-6"><h5>Количество статических страниц:</h5><span class="note large">Максимальное количество выводимых статических страниц.</span></td>
+		<td class="col-xs-6"><h5>РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚Р°С‚РёС‡РµСЃРєРёС… СЃС‚СЂР°РЅРёС†:</h5><span class="note large">РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РІС‹РІРѕРґРёРјС‹С… СЃС‚Р°С‚РёС‡РµСЃРєРёС… СЃС‚СЂР°РЅРёС†.</span></td>
 		<td class="col-xs-6 settingstd"><input class="uniform" type="text" name="sitemap_static_limit" id="sitemap_static_limit" value="" /></td>
 		</tr><tr>
-		<td class="col-xs-6"><h5>Код для вставки в <strong>main.tpl</strong></h5><span class="note large"></span></td>
+		<td class="col-xs-6"><h5>РљРѕРґ РґР»СЏ РІСЃС‚Р°РІРєРё РІ <strong>main.tpl</strong></h5><span class="note large"></span></td>
 		<td class="col-xs-6 settingstd">
 			<textarea type="text" style="width:100%;height:100px;" name="sitemap_code" id="sitemap_code" >{include file=\'engine/modules/sitemap.php\'}</textarea>
 		</td>
@@ -234,7 +234,7 @@ color: #666;
 </div>
         ';
 
-        // Отображение подвала админского интерфейса
+        // РћС‚РѕР±СЂР°Р¶РµРЅРёРµ РїРѕРґРІР°Р»Р° Р°РґРјРёРЅСЃРєРѕРіРѕ РёРЅС‚РµСЂС„РµР№СЃР°
         echofooter();
 
 ?>
